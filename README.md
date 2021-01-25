@@ -51,11 +51,7 @@ lstm4.m and lstm4.fig: implementation of the Long Short-Term Memory (LSTM) netwo
 pca.m: implementation of principal component analysis used by the above programs to reduce output vector dimensionality.
 cl.m: implementation of hierarchical cluster analysis for tree diagrams of network output.
 
-// Relationship between files, if important: 
 The program and data files are structurally related, as described in the next section.
-
-// Is this a new version of a previously published dataset? yes/no
-This dataset has not previously been published.
 
 HOW TO USE THE DATASET
 Programs require the standard Matlab environment to run. All the data and program files must be downloaded into 
@@ -123,9 +119,6 @@ Use is analogous to that of letter.m. Input is letterreps.txt and lstmstrings.tx
 Note that the network architectures used in LEX are notoriously sensitive to connection initialization, and the above programs use the Matlab random 
 number generator for that purpose. The result is that multiple runs may be required for replication of results reported in LEX.
 
-----------------------------------
-CODE DOCUMENTATION FOR: [FILENAME] 
-----------------------------------
 All programs share a common structure and variable naming policy, which is described in what follows; differences of detail are documented
 by inline comments within the code. Note that the guiding principle for the code was clarity rather than processing efficiency, so that variable 
 and event handler names are maximally descriptive and executable code is sequential rather than segmented into interacting subroutines. 
